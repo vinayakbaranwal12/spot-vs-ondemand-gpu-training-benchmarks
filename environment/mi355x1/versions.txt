@@ -1,0 +1,14 @@
+image_pull_s=128.50965571403503
+image_digest=rocm/pytorch@sha256:cc9b00f90b85c97b015b040fa55c8d1b404b7cacc6ad57d74ee3451c97508da1
+image_ref=rocm/pytorch:rocm7.14.1_ubuntu24.04_py3.12_pytorch_release_2.12.0
+image_size_bytes=49715811856 (46.30 GiB)
+container_start_s=12.7380690574646
+=== host ===
+Linux <resource-name> 6.8.0-137-generic #137-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 17 20:28:23 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+=== docker ===
+29.8.2
+=== container versions ===
+OS=PRETTY_NAME="Ubuntu 24.04.4 LTS" NAME="Ubuntu" VERSION_ID="24.04" VERSION="24.04.4 LTS (Noble Numbat)" VERSION_CODENAME=noble
+python 3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]
+torch 2.12.0+rocm7.14.1
+transformers MISSING No module named 'transformers'

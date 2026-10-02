@@ -1,0 +1,4 @@
+OS=PRETTY_NAME="Ubuntu 24.04.4 LTS" NAME="Ubuntu" VERSION_ID="24.04" VERSION="24.04.4 LTS (Noble Numbat)" VERSION_CODENAME=noble
+python 3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]
+torch 2.12.0+rocm7.14.1
+transformers MISSING No module named 'transformers'

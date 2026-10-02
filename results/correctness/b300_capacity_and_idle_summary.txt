@@ -1,0 +1,24 @@
+TOTAL_CAPACITY_WAIT_S 270.0
+TOTAL_CAPACITY_WAIT_USD 0.60 (at $8.0/hr)
+
+=== Final resume capacity fields ===
+  resume-cold-scratch-1-20261001202627 capacity_retries=0 retry_wait_s=0.0 err=
+  resume-cold-scratch-2-20261002041957 capacity_retries=0 retry_wait_s=0.0 err=
+  resume-cold-scratch-3-20261002061810 capacity_retries=0 retry_wait_s=0.0 err=
+  resume-lean-scratch-1-20261002062916 capacity_retries=1 retry_wait_s=90.0 err={"errors":[{"detail":"POST https://api.digitalocean.com/v2/droplets: 422 (reques
+  resume-lean-scratch-2-20261002064122 capacity_retries=1 retry_wait_s=90.0 err={"errors":[{"detail":"POST https://api.digitalocean.com/v2/droplets: 422 (reques
+  resume-lean-scratch-3-20261002071642 capacity_retries=1 retry_wait_s=90.0 err={"errors":[{"detail":"POST https://api.digitalocean.com/v2/droplets: 422 (reques
+
+=== Idle Droplet cost (B300-tagged manifest rows) ===
+total_idle_s=32164.0 total_idle_cost_usd=71.48
+  id=<droplet-id> idle_s=26764.0 idle_usd=59.48 retries=0 wait_s=0 name=<resource-name>
+    note: batch died after CHECK_OK; reaped before phase3 resume
+  id=<droplet-id> idle_s=5400 idle_usd=12.0 retries=0 wait_s=0 name=<resource-name>
+    note: measure died mid-scp twice; droplet idle ~1.5h before successful remesure
+  id=<droplet-id> idle_s=0.0 idle_usd=0.0 retries=1 wait_s=90.0 name=<resource-name>
+  id=<droplet-id> idle_s=0.0 idle_usd=0.0 retries=1 wait_s=90.0 name=<resource-name>
+  id=<droplet-id> idle_s=0.0 idle_usd=0.0 retries=1 wait_s=90.0 name=<resource-name>
+
+BATCH_LOG_CAPACITY_WAITS 5
+BATCH_LOG_CAPACITY_WAIT_S 450
+BATCH_LOG_CAPACITY_WAIT_USD 1.00

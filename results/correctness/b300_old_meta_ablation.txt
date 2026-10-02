@@ -1,0 +1,23 @@
+# Old checkpoint meta ablation (B300)
+
+Commit that added fields: 995a62d
+Added to meta.json:
+  - python_random_state, python_random_version
+  - numpy_rng_bit_generator_state, numpy_rng_pos
+  - optimizer_state_steps (diagnostic sample only; not restored)
+
+Already present: torch_rng_hex, cuda_rng_hex
+
+Ablation droplet: <droplet-id>
+Method: deterministic train → save ckpt-80 (new meta) → strip new fields → resume
+Result: OLD_META_BITEXACT_PASS (steps 81-100 bit-exact; mismatch_count=0)
+
+Size:
+  meta.json: 10444 → 30416 bytes (+19972)
+  full ckpt-80 du -sb: 98291914153 → 98291934125 (+19972 ≈ 20 KB on ~91.5 GiB)
+  DCP payload unchanged
+
+Conclusion: original harness did not have a resume gap for this workload.
+R timings unaffected (size delta negligible; R does not depend on meta contents beyond size).
+
+Artifact: ./logs/b300x1/8B/det-old-meta-ablation-manual-20261002143318/compare.json

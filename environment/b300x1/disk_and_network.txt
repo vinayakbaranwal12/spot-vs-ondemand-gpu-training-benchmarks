@@ -1,0 +1,27 @@
+=== df -h ===
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs            45G  1.4M   45G   1% /run
+/dev/vda1       698G   16G  682G   3% /
+tmpfs           221G     0  221G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/vda15      105M  6.1M   99M   6% /boot/efi
+tmpfs            45G  8.0K   45G   1% /run/user/0
+/dev/vdc1       5.0T   32K  4.8T   1% /scratch
+=== lsblk ===
+NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0     7:0    0  63.8M  1 loop /snap/core20/2866
+loop1     7:1    0  91.7M  1 loop /snap/lxd/38800
+loop2     7:2    0  49.3M  1 loop /snap/snapd/26865
+vda     252:0    0   720G  0 disk 
+├─vda1  252:1    0 719.9G  0 part /
+├─vda14 252:14   0     4M  0 part 
+└─vda15 252:15   0   106M  0 part /boot/efi
+vdb     252:16   0   490K  1 disk 
+vdc     252:32   0     5T  0 disk 
+└─vdc1  252:33   0     5T  0 part /scratch
+=== scratch ===
+/scratch
+=== write test ===
+256+0 records in
+256+0 records out
+268435456 bytes (268 MB, 256 MiB) copied, 0.0730919 s, 3.7 GB/s

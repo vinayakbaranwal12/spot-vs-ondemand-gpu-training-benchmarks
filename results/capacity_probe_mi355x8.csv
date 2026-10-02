@@ -1,0 +1,46 @@
+timestamp_utc,attempt_global,sweep,region,http_or_status,detail,droplet_id,timestamp_note
+,1,,mem1,422,size_not_available_prior_probe,,timestamp_unknown
+,2,,atl1,422,size_not_available_prior_probe,,timestamp_unknown
+,3,,nyc1,422,size_not_available_prior_probe,,timestamp_unknown
+,4,,nyc3,422,size_not_available_prior_probe,,timestamp_unknown
+,5,,tor1,422,size_not_available_prior_probe,,timestamp_unknown
+,6,,sfo2,422,size_not_available_prior_probe,,timestamp_unknown
+,7,,sfo3,422,size_not_available_prior_probe,,timestamp_unknown
+,8,,fra1,422,size_not_available_prior_probe,,timestamp_unknown
+,9,,ams3,422,size_not_available_prior_probe,,timestamp_unknown
+,10,,lon1,422,size_not_available_prior_probe,,timestamp_unknown
+,11,,sgp1,422,size_not_available_prior_probe,,timestamp_unknown
+,12,,blr1,422,size_not_available_prior_probe,,timestamp_unknown
+,13,,syd1,422,size_not_available_prior_probe,,timestamp_unknown
+2026-10-02T13:34:22Z,14,1,mem1,422,size_not_available_retry,,
+2026-10-02T13:34:22Z,15,1,atl1,422,size_not_available_retry,,
+2026-10-02T13:34:22Z,16,1,nyc1,422,size_not_available_retry,,
+2026-10-02T13:34:22Z,17,1,nyc3,422,size_not_available_retry,,
+2026-10-02T13:53:03Z,18,2,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""a9ebcb06-7d33-4327-9704-2c2e6cab3986\"") Size is not available in this region.""}]} ",,
+2026-10-02T13:53:06Z,19,2,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""d63697bd-3779-4eda-889b-66afc5ed500b\"") Size is not available in this region.""}]} ",,
+2026-10-02T13:53:07Z,20,2,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""2a1ae7bd-805a-46ca-ae83-891810544fbd\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:03:50Z,21,3,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""3f5054dc-7321-46ed-81bd-c7d6459a3b16\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:03:52Z,22,3,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""b1da6318-ca29-4db2-ad47-3e7c57f1c522\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:03:54Z,23,3,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""5e3875e4-7d91-4325-9e54-8a8923fdc71c\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:03:55Z,24,3,nyc3,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""d75a654e-50de-4faa-af1b-164ae96d6c6f\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:03:56Z,25,3,tor1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""26413fbd-29dd-4ed8-b7dc-577f353e3c4c\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:12Z,26,3,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""26abe2d3-9617-4433-bcc3-5cf1e6544494\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:13Z,27,3,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""f4b72c29-cce9-4de8-9821-c73fd276a875\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:15Z,28,3,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""fbd045cd-76ed-4a01-aa64-6bd0785dc7b7\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:16Z,29,3,nyc3,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""6f69bd00-5fb0-4f88-ad41-a1f784263e55\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:18Z,30,3,tor1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""1cb09456-27a9-4f24-a394-3ab0274e82b9\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:36Z,31,3,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""654a4cde-38b7-4ffc-b2f9-14fb6b6da571\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:38Z,32,3,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""b3aed166-9075-4c42-bde2-0576bd7857f4\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:39Z,33,3,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""6994ed72-7cbf-4fbc-966a-daf5bb611d1d\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:41Z,34,3,nyc3,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""97be556a-1ab3-4729-8f5a-272c8c5cf189\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:42Z,35,3,tor1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""6ae476c9-9ef8-4b62-a980-56ccf3753a31\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:04:43Z,36,3,sfo2,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""4ea42985-875c-458b-8aa7-a7286b1dd1be\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:05:07Z,37,3,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""d0adaf13-1380-4068-917e-cf538d7a6683\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:05:08Z,38,3,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""10cb9001-e3fe-4a7d-a7cd-7970b3b84a3e\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:05:09Z,39,3,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""eae9d8f9-d6d5-49ee-a0ea-f709d5284253\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:05:11Z,40,3,nyc3,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""37d3bd59-4d33-40cf-9db4-c95d41fbea97\"") Size is not available in this region.""}]} ",,
+2026-10-02T15:05:12Z,41,3,tor1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""ab437204-9c32-4593-aae4-9bd133a533aa\"") Size is not available in this region.""}]} ",,
+2026-10-02T17:17:00Z,42,4,mem1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""50432370-a599-4fd6-94b0-646c74d29fa0\"") Size is not available in this region.""}]} ",,
+2026-10-02T17:17:02Z,43,4,atl1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""5de2cd64-fbeb-47a8-a985-60d47beaa53d\"") Size is not available in this region.""}]} ",,
+2026-10-02T17:17:04Z,44,4,nyc1,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""932e9e5f-5e30-4afb-9861-df4700991cf5\"") Size is not available in this region.""}]} ",,
+2026-10-02T17:17:06Z,45,4,nyc3,422,"{""errors"":[{""detail"":""POST https://api.digitalocean.com/v2/droplets: 422 (request \""80fcb0e2-e81c-4f6c-809d-446aa3697cfd\"") Size is not available in this region.""}]} ",,

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "gpu-mi355x1-288gb-spot",
+    "price_hourly": 2.97,
+    "price_monthly": 2209.68,
+    "available": true,
+    "regions": [
+      "mem1"
+    ],
+    "vcpus": 24,
+    "memory": 262144,
+    "disk": 720,
+    "capture_utc": "2026-10-02T17:15:46Z"
+  },
+  {
+    "slug": "gpu-b300x1-288gb-lc-spot",
+    "price_hourly": 8,
+    "price_monthly": 5952,
+    "available": true,
+    "regions": [
+      "mkc1"
+    ],
+    "vcpus": 28,
+    "memory": 458752,
+    "disk": 720,
+    "capture_utc": "2026-10-02T17:15:46Z"
+  },
+  {
+    "slug": "gpu-mi355x8-2304gb-spot",
+    "price_hourly": 23.76,
+    "price_monthly": 17677.44,
+    "available": true,
+    "regions": null,
+    "vcpus": 192,
+    "memory": 2097152,
+    "disk": 2046,
+    "capture_utc": "2026-10-02T17:15:46Z"
+  },
+  {
+    "slug": "gpu-b300x8-2304gb-lc-spot",
+    "price_hourly": 64,
+    "price_monthly": 47616,
+    "available": true,
+    "regions": null,
+    "vcpus": 224,
+    "memory": 3670016,
+    "disk": 2046,
+    "capture_utc": "2026-10-02T17:15:46Z"
+  }
+]

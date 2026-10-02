@@ -1,0 +1,17 @@
+{
+  "droplet_id": "<droplet-id>",
+  "image": "gpu-h100x1-base",
+  "container": "nvcr.io/nvidia/pytorch:25.11-py3",
+  "host_driver_version": "580.173.02",
+  "host_nvidia_smi_cuda_version": "13.0",
+  "forward_compatibility_mode": "not_enabled",
+  "torch_check": {
+    "torch_cuda_is_available": true,
+    "device_name": "NVIDIA B300 SXM6 PC",
+    "compute_capability": "10.3",
+    "bf16_matmul_ok": true,
+    "torch_cuda_version": "13.0"
+  },
+  "gate": "PASS",
+  "container_choice_reason": "newest NGC PyTorch native on DO gpu-h100x1-base driver 580 (CUDA 13.0); overrides current 26.07 for B300 only"
+}

@@ -1,0 +1,33 @@
+{
+  "method": "old_meta_ablation_strip_python_numpy_optimizer_sample",
+  "commit_that_added_fields": "995a62d",
+  "stripped_fields": [
+    "numpy_rng_bit_generator_state",
+    "numpy_rng_pos",
+    "optimizer_state_steps",
+    "python_random_state",
+    "python_random_version"
+  ],
+  "kept_rng_fields": [
+    "torch_rng_hex",
+    "cuda_rng_hex"
+  ],
+  "compare_range": [
+    81,
+    100
+  ],
+  "bit_exact": true,
+  "first_diverge": null,
+  "mismatch_count": 0,
+  "mismatches_head": [],
+  "meta_new_bytes": 30416,
+  "meta_oldfmt_bytes": 10444,
+  "meta_delta_bytes": 19972,
+  "du_lines": [
+    "98291934125\t/scratch/bench/det_oldmeta_ckpt80_new",
+    "98291914153\t/scratch/bench/det_oldmeta_ckpt80_oldfmt",
+    "30416 /scratch/bench/det_oldmeta_ckpt80_new/meta.json",
+    "10444 /scratch/bench/det_oldmeta_ckpt80_oldfmt/meta.json",
+    "40860 total"
+  ]
+}

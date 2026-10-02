@@ -1,0 +1,54 @@
+run_id,gpu,model,kind,variant,status,exclude_reason
+clean-scratch-b300x1-1.7B-20261001195151,b300x1,1.7B,train+checkpoint,cold,final,
+smoke-b300x1-1p7b-20261001185116,b300x1,1.7B,train+checkpoint,,excluded,smoke run (CUDA forward-compatibility mode detected on driver 580.173.02 with NGC 26.07)
+smoke-b300x1-1p7b-20261001193246,b300x1,1.7B,train+checkpoint,,excluded,smoke run (one checkpoint row was unflagged internally; excluded from the published final CSV)
+clean-scratch-b300x1-8B-20261001195841,b300x1,8B,train+checkpoint,cold,final,
+det-old-meta-ablation-20261002135346,b300x1,8B,resume,,excluded,correctness probe (old-format ablation); superseded by the manual rerun
+det-old-meta-ablation-20261002140932,b300x1,8B,resume,,excluded,correctness probe (old-format ablation); superseded by the manual rerun
+det-old-meta-ablation-manual-20261002143318,b300x1,8B,resume,,excluded,correctness probe (old-format ablation); artifact published at results/correctness/old_meta_ablation_compare.json
+det-resume-bitexact-20261002130648,b300x1,8B,resume,,excluded,correctness probe (bit-exact resume verification); artifact published at results/correctness/det_resume_bitexact_compare.json
+determinism-verify-20261002110509,b300x1,8B,resume,,excluded,correctness probe (run-to-run determinism deltas)
+determinism-verify-20261002110830,b300x1,8B,resume,,excluded,correctness probe (run-to-run determinism deltas)
+determinism-verify-20261002112107,b300x1,8B,resume,,excluded,correctness probe (run-to-run determinism deltas)
+resume-cold-scratch-1-20261001202627,b300x1,8B,resume,cold,final,
+resume-cold-scratch-2-20261002040804,b300x1,8B,resume,cold,excluded,incomplete cold2 attempt; superseded by 20261002041957
+resume-cold-scratch-2-20261002041957,b300x1,8B,resume,cold,final,
+resume-cold-scratch-3-20261002061702,b300x1,8B,resume,cold,excluded,incomplete cold3 create attempt; active run is resume-cold-scratch-3-20261002061810
+resume-cold-scratch-3-20261002061738,b300x1,8B,resume,cold,excluded,incomplete cold3 create attempt; active run is resume-cold-scratch-3-20261002061810
+resume-cold-scratch-3-20261002061810,b300x1,8B,resume,cold,final,
+resume-lean-scratch-1-20261002062916,b300x1,8B,resume,snapshot,final,
+resume-lean-scratch-2-20261002064122,b300x1,8B,resume,snapshot,final,
+resume-lean-scratch-3-20261002071642,b300x1,8B,resume,snapshot,final,
+strict-loss-ref-scratch-20261002065332,b300x1,8B,resume,,excluded,correctness probe; not a timing row
+clean-mi355x1-1.7B-20260930211548,mi355x1,1.7B,train+checkpoint,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+clean-mi355x1-1.7B-20260930211847,mi355x1,1.7B,train+checkpoint,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+clean-scratch-mi355x1-1.7B-20261001080951,mi355x1,1.7B,train+checkpoint,cold,final,
+full-mi355x1-1.7B-20260930203428,mi355x1,1.7B,train+checkpoint,cold,excluded,overlap_docr_push
+smoke-mi355x1-1p7b-20260930195024,mi355x1,1.7B,train+checkpoint,,excluded,smoke run
+clean-mi355x1-8B-20260930212438,mi355x1,8B,train+checkpoint,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+clean-scratch-mi355x1-8B-20261001081617,mi355x1,8B,train+checkpoint,cold,final,
+full-mi355x1-8B-20260930204136,mi355x1,8B,train+checkpoint,cold,excluded,overlap_docr_push
+resume-cold-1-20260930214446,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-1-20260930215412,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-1-20260930220553,mi355x1,8B,resume,cold,excluded,resume max_steps bug; no first_step
+resume-cold-1-20260930221859,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-2-20260930214546,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-2-20260930220532,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-2-20260930221831,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-2-20260930223143,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-3-20260930214716,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-3-20260930224225,mi355x1,8B,resume,cold,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+resume-cold-scratch-1-20261001095032,mi355x1,8B,resume,cold,excluded,provision_s reconstructed after create --wait drop; not continuous timed create-to-SSH+GPU
+resume-cold-scratch-2-20261001135013,mi355x1,8B,resume,cold,excluded,R excludes pip_install_s; superseded
+resume-cold-scratch-3-20261001140233,mi355x1,8B,resume,cold,excluded,R excludes pip_install_s; superseded
+resume-cold-scratch-4-20261001172827,mi355x1,8B,resume,cold,final,
+resume-cold-scratch-5-20261001174237,mi355x1,8B,resume,cold,final,
+resume-cold-scratch-6-20261001175650,mi355x1,8B,resume,cold,final,
+resume-lean-scratch-1-20261001141701,mi355x1,8B,resume,snapshot,excluded,provision_s reconstructed after create--wait drop (includes ~2648s operator idle); not live timed create-to-SSH+GPU
+resume-lean-scratch-2-20261001151613,mi355x1,8B,resume,snapshot,excluded,superseded by resume-lean-scratch-2-20261001151651
+resume-lean-scratch-2-20261001151651,mi355x1,8B,resume,snapshot,final,
+resume-lean-scratch-3-20261001165126,mi355x1,8B,resume,snapshot,final,
+resume-lean-scratch-4-20261001181106,mi355x1,8B,resume,snapshot,final,
+resume-snap-1-20261001072935,mi355x1,8B,resume,snapshot,excluded,storage_boot_disk; checkpoints written to /mnt on vda1
+strict-loss-ref-20261001073603,mi355x1,8B,resume,,excluded,correctness probe; not a timing row
+strict-loss-ref-scratch-20261001171807,mi355x1,8B,resume,,excluded,correctness probe; not a timing row

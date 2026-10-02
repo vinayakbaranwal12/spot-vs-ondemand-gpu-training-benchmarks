@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this benchmark data or harness, please cite it as below."
+title: "Spot vs on-demand GPU training benchmarks: checkpoint, reclaim, and resume cost on MI355X and B300"
+authors:
+  - family-names: Baranwal
+    given-names: Vinayak
+year: 2026
+license: MIT
+repository-code: "https://github.com/vinayakbaranwal12/spot-vs-ondemand-gpu-training-benchmarks"
+type: dataset
+keywords:
+  - spot-instances
+  - gpu-training
+  - checkpointing
+  - pytorch
+  - digitalocean

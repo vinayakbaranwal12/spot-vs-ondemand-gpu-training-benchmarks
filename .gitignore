@@ -1,0 +1,18 @@
+# python caches
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+
+# secrets and env files are never committed
+*.env
+.env*
+
+# checkpoints and bulky runtime artifacts
+ckpts/
+checkpoints/
+*.bin
+*.pt
+*.pth
+*.safetensors

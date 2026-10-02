@@ -1,0 +1,4 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdc1       5.0T   40K  4.8T   1% /scratch
+/dev/vdc1 /scratch
+4.0K	/scratch/bench/ckpts_clean_1.7B

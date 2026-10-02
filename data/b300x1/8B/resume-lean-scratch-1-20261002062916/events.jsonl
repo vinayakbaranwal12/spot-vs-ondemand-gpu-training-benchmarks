@@ -1,0 +1,9 @@
+{"event": "provision_start", "wall_utc": "2026-10-02T06:29:16Z", "mono_s": 0.0, "simulated_reclaim": true}
+{"event": "provision_end", "wall_utc": "2026-10-02T06:33:50.981737Z", "mono_s": 274.0, "duration_s": 274, "droplet_id": "<droplet-id>", "ip": "<droplet-ip>", "timed": true, "note": "create_no_wait then wait-ssh+nvidia-smi"}
+{"event": "env_start", "wall_utc": "2026-10-02T06:34:46.347903Z", "mono_s": 0.026341125, "variant": "snapshot"}
+{"event": "env_end", "wall_utc": "2026-10-02T06:34:55.929091Z", "mono_s": 0.016491125, "duration_s": 9}
+{"event": "env_split", "wall_utc": "2026-10-02T06:35:07.868804Z", "mono_s": 0.019851541, "image_pull_s": 0.0, "container_start_s": 3.2719459533691406, "image_already_local": "True"}
+{"event": "download_start", "wall_utc": "2026-10-02T06:35:28.104881Z", "mono_s": 0.015507791, "spaces_uri": "s3://<bucket>/clean-scratch-b300x1-8B-20261001195841/ckpt-step-100"}
+{"event": "download_end", "wall_utc": "2026-10-02T06:37:07.654945Z", "mono_s": 0.019868875, "duration_s": 99}
+{"event": "resume_train_start", "wall_utc": "2026-10-02T06:37:07.692529Z", "mono_s": 0.011764958}
+{"event": "pip_install", "wall_utc": "2026-10-02T06:41:11.506543Z", "mono_s": 0.020812708, "duration_s": 8, "note": "timed inside container before torchrun; previously unaccounted wall during resume_train (not in first_step_s or container_start_s)"}

@@ -1,0 +1,9 @@
+{
+  "image_ref": "nvcr.io/nvidia/pytorch:25.11-py3",
+  "image_digest": "nvcr.io/nvidia/pytorch@sha256:417cbf33f87b5378849df37983552cd1f8bc8b62fe1ceabe004de816a55dff21",
+  "image_already_local": false,
+  "image_pull_s": 99.30265617370605,
+  "container_start_s": 5.468725204467773,
+  "image_size_bytes": 9208409053,
+  "env_s": 104.77138137817383
+}

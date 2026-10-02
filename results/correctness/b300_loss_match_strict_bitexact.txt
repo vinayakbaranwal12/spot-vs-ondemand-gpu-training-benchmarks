@@ -1,0 +1,20 @@
+# B300 loss_match_strict = True (bit-exact resume)
+
+UTC: 2026-10-02T13:13+ approx (DET_BITEXACT_DONE)
+Droplet: <droplet-id> (mkc1), NGC pytorch:25.11-py3
+Method: like-for-like deterministic
+  - torch.use_deterministic_algorithms(True)
+  - CUBLAS_WORKSPACE_CONFIG=:4096:8
+  - seed=42, model=8B, batch_size=4
+1. Train from scratch to step 100, save ckpt-80, log every step loss (PHASE1 max_steps=101).
+2. Resume from that ckpt-80, train to step 100 (PHASE2).
+3. Compare steps 81..100 with float bit equality (no tolerance).
+
+Result: BITEXACT_PASS
+  bit_exact=true
+  first_diverge=null
+  mismatch_count=0
+  compare_range=[81,100]
+  artifact: logs/b300x1/8B/det-resume-bitexact-20261002130648/compare.json
+
+Prior withdrawn claim (9.20e-4 vs 1e-3, det continuation vs non-det original) is superseded by this test.
